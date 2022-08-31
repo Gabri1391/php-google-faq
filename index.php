@@ -63,18 +63,71 @@ $faqs = [
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <title>Document</title>
     <style type="text/css">
+    header{
+        height: 100px;
+        padding: 20px 50px;
+    }
+    header div{
+        font-size:1.3rem;
+       
+    }
+    .logo{
+        width:100px;
+        background-color: white;
+        margin-right:10px;
+    }
+    .navbar{
+        width:800px;
+        margin-top: 20px;
+    }
+    .navbar li{
+      padding: 0 10px;
+    }
     .container{
         max-width: 1000px;
-        padding-top: 80px;
     }
     h2{
         font-size: 1.5rem;
+    }
+    footer{
+        background-color:#F5F5F5;
+    }
+    .footer-navbar{
+        width:800px;
+    }
+    .footer-navbar li{
+        font-size:0.8rem;
+        padding: 0 10px;
+    }
+    #footer-section{
+        height: 50px;
     }
 </style>
 </head>
 <body>
 
+   <!-- HEADER -->
+    <header>
+      <div class="d-flex justify-content-between align-items-center">
+          <div class=" d-flex">
+              <img class="logo" src="./img/google-logo.png" alt="google logo">
+              <div class="text-secondary">Privacy e Termini</div>
+          </div>
+  
+          <div>
+              <a href="#" role="button">Accedi</a>
+          </div>
+      </div>
 
+      <ul class="d-flex list-unstyled navbar">
+        <li>Introduzione</li>
+        <li>Norme sulla privacy</li>
+        <li>Termini di servizio</li>
+        <li>Tecnologie</li>
+        <li>Domande Frequenti</li>
+      </ul>
+    </header>
+    <hr>
     <!-- MAIN -->
     <main class="container">
 
@@ -86,6 +139,25 @@ $faqs = [
         <?php } ?>    
         
     </main>
+    <!-- FOOTER -->
+    <footer>
+        <div class="container d-flex justify-content-between align-items-center" id="footer-section">
+            <div>
+                <ul class="d-flex list-unstyled footer-navbar">
+                    <li>Google</li>
+                    <li>Tutto su Google</li>
+                    <li>Privacy</li>
+                    <li>Termini</li>
+                </ul>
+            </div>
+            <div>
+                <select name="language" id="language">
+                    <option value="">Italiano</option>
+                </select>
+            </div>
+
+        </div>
+    </footer>
 
 </body>
 </html>
