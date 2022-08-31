@@ -60,17 +60,23 @@ $faqs = [
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <title>Document</title>
+    <style type="text/css">
+    .container{
+        max-width: 1000px;
+        padding-top: 80px;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+</style>
 </head>
 <body>
-    
-   <!-- FOOTER -->
-    <footer>
 
-    </footer>
 
     <!-- MAIN -->
-    <main>
+    <main class="container">
 
         <?php
                 foreach ($faqs as $faq) {
